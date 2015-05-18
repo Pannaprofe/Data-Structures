@@ -61,6 +61,7 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Structures\myCollection.cs" />
     <Compile Include="Structures\MyList.cs" />
     <Compile Include="Structures\MyQueue.cs" />
     <Compile Include="Structures\MyStack.cs" />
