@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Data_Structures
 {
-    abstract class Creator
+    public abstract class Creator
     {
-        public abstract Structure FactoryMethod();
+        protected List<int> inputList;
+        abstract public void BuildCollection(List<int> inputList);
     }
 }

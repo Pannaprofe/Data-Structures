@@ -8,3 +8,13 @@ D:\Data Structures\Data Structures\bin\Debug\Data Structures.pdb
 D:\Data Structures\Data Structures\obj\Debug\Data Structures.exe
 D:\Data Structures\Data Structures\obj\Debug\Data Structures.pdb
 D:\Data Structures\Data Structures\obj\Debug\Data_Structures.Dialog.resources
+D:\Data Structures\Data-Structures\Data Structures\bin\Debug\Data Structures.exe.config
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data Structures.exe
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data Structures.pdb
+D:\Data Structures\Data-Structures\Data Structures\bin\Debug\Data Structures.exe
+D:\Data Structures\Data-Structures\Data Structures\bin\Debug\Data Structures.pdb
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data Structures.csprojResolveAssemblyReference.cache
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data_Structures.DialogNew.resources
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data_Structures.Form1.resources
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data_Structures.Properties.Resources.resources
+D:\Data Structures\Data-Structures\Data Structures\obj\Debug\Data Structures.csproj.GenerateResource.Cache

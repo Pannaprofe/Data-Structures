@@ -8,5 +8,9 @@ namespace Data_Structures
 {
     class MyQueue:Structure
     {
+        public override Creator FactoryMethod()
+        {
+            return new CreateQueue();
+        }
     }
 }

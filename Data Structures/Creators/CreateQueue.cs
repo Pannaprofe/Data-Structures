@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,13 @@ namespace Data_Structures
 {
     class CreateQueue:Creator
     {
-        public override Structure FactoryMethod()
+        public override void BuildCollection(List<int> inputList)
         {
-           // throw new NotImplementedException();
-            return new MyQueue();
+            Queue queue = new Queue();
+            foreach (var elem in inputList)
+            {
+                queue.Enqueue(elem);
+            } 
         }
     }
 }

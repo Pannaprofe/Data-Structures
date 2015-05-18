@@ -17,5 +17,10 @@ namespace Data_Structures
         {
 
         }
+
+        public override Creator FactoryMethod()
+        {
+            return new CreateList();
+        }
     }
 }

@@ -42,6 +42,7 @@
             this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tab1 = new System.Windows.Forms.TabPage();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
@@ -88,14 +89,14 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // deleteCurrentToolStripMenuItem
@@ -104,19 +105,19 @@
             this.deleteCurrentToolStripMenuItem1,
             this.deleteAllToolStripMenuItem});
             this.deleteCurrentToolStripMenuItem.Name = "deleteCurrentToolStripMenuItem";
-            this.deleteCurrentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteCurrentToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.deleteCurrentToolStripMenuItem.Text = "Delete";
             // 
             // deleteCurrentToolStripMenuItem1
             // 
             this.deleteCurrentToolStripMenuItem1.Name = "deleteCurrentToolStripMenuItem1";
-            this.deleteCurrentToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteCurrentToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
             this.deleteCurrentToolStripMenuItem1.Text = "Delete Current";
             // 
             // deleteAllToolStripMenuItem
             // 
             this.deleteAllToolStripMenuItem.Name = "deleteAllToolStripMenuItem";
-            this.deleteAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteAllToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.deleteAllToolStripMenuItem.Text = "Delete All";
             // 
             // saveToolStripMenuItem
@@ -125,19 +126,19 @@
             this.saveCurrentToolStripMenuItem,
             this.saveAllToolStripMenuItem});
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveCurrentToolStripMenuItem
             // 
             this.saveCurrentToolStripMenuItem.Name = "saveCurrentToolStripMenuItem";
-            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.saveCurrentToolStripMenuItem.Text = "Save Current";
             // 
             // saveAllToolStripMenuItem
             // 
             this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.saveAllToolStripMenuItem.Text = "Save all";
             // 
             // Tab1
@@ -159,11 +160,22 @@
             this.tabControl.Size = new System.Drawing.Size(589, 255);
             this.tabControl.TabIndex = 5;
             // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.Location = new System.Drawing.Point(265, 21);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(75, 23);
+            this.DeleteBtn.TabIndex = 9;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 336);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.AddBtn);
@@ -196,6 +208,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveAllToolStripMenuItem;
         private System.Windows.Forms.TabPage Tab1;
         private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.Button DeleteBtn;
     }
 }
 

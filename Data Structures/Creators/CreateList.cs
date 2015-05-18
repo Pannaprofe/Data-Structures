@@ -8,10 +8,9 @@ namespace Data_Structures
 {
     class CreateList:Creator
     {
-        public override Structure FactoryMethod()
+        public override void BuildCollection(List<int> inputList)
         {
-            //throw new NotImplementedException();
-            return new MyList();
+            
         }
     }
 }

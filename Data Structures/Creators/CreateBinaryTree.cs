@@ -8,10 +8,14 @@ namespace Data_Structures
 {
     class CreateBinaryTree:Creator
     {
-        public override Structure FactoryMethod()
+        public override void BuildCollection(List<int> inputList)
         {
-            //throw new NotImplementedException();
-            return new MyBinaryTree();
+            SortedSet<int> tree = new SortedSet<int>();
+            foreach (var elem in inputList)
+            {
+                tree.Add(elem);
+            }
+
         }
     }
 }

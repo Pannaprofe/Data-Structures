@@ -1,6 +1,6 @@
 ﻿namespace Data_Structures
 {
-    partial class Dialog
+    partial class DialogNew
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.FileNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.OKBtn = new System.Windows.Forms.Button();
+            this.StackRdBtn = new System.Windows.Forms.RadioButton();
+            this.QueueRdBtn = new System.Windows.Forms.RadioButton();
+            this.ListRdBtn = new System.Windows.Forms.RadioButton();
+            this.BTreeRdBtn = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(40, 69);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(157, 97);
-            this.treeView1.TabIndex = 0;
             // 
             // label1
             // 
@@ -77,17 +73,68 @@
             this.OKBtn.UseVisualStyleBackColor = true;
             this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
             // 
-            // Dialog
+            // StackRdBtn
+            // 
+            this.StackRdBtn.AutoSize = true;
+            this.StackRdBtn.Location = new System.Drawing.Point(40, 84);
+            this.StackRdBtn.Name = "StackRdBtn";
+            this.StackRdBtn.Size = new System.Drawing.Size(51, 17);
+            this.StackRdBtn.TabIndex = 5;
+            this.StackRdBtn.TabStop = true;
+            this.StackRdBtn.Text = "Stack";
+            this.StackRdBtn.UseVisualStyleBackColor = true;
+            this.StackRdBtn.CheckedChanged += new System.EventHandler(this.StackRdBtn_CheckedChanged);
+            // 
+            // QueueRdBtn
+            // 
+            this.QueueRdBtn.AutoSize = true;
+            this.QueueRdBtn.Location = new System.Drawing.Point(40, 107);
+            this.QueueRdBtn.Name = "QueueRdBtn";
+            this.QueueRdBtn.Size = new System.Drawing.Size(57, 17);
+            this.QueueRdBtn.TabIndex = 6;
+            this.QueueRdBtn.TabStop = true;
+            this.QueueRdBtn.Text = "Queue";
+            this.QueueRdBtn.UseVisualStyleBackColor = true;
+            this.QueueRdBtn.CheckedChanged += new System.EventHandler(this.QueueRdBtn_CheckedChanged);
+            // 
+            // ListRdBtn
+            // 
+            this.ListRdBtn.AutoSize = true;
+            this.ListRdBtn.Location = new System.Drawing.Point(40, 130);
+            this.ListRdBtn.Name = "ListRdBtn";
+            this.ListRdBtn.Size = new System.Drawing.Size(41, 17);
+            this.ListRdBtn.TabIndex = 7;
+            this.ListRdBtn.TabStop = true;
+            this.ListRdBtn.Text = "List";
+            this.ListRdBtn.UseVisualStyleBackColor = true;
+            this.ListRdBtn.CheckedChanged += new System.EventHandler(this.ListRdBtn_CheckedChanged);
+            // 
+            // BTreeRdBtn
+            // 
+            this.BTreeRdBtn.AutoSize = true;
+            this.BTreeRdBtn.Location = new System.Drawing.Point(40, 153);
+            this.BTreeRdBtn.Name = "BTreeRdBtn";
+            this.BTreeRdBtn.Size = new System.Drawing.Size(78, 17);
+            this.BTreeRdBtn.TabIndex = 8;
+            this.BTreeRdBtn.TabStop = true;
+            this.BTreeRdBtn.Text = "Binary tree";
+            this.BTreeRdBtn.UseVisualStyleBackColor = true;
+            this.BTreeRdBtn.CheckedChanged += new System.EventHandler(this.BTreeRdBtn_CheckedChanged);
+            // 
+            // DialogNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 200);
+            this.Controls.Add(this.BTreeRdBtn);
+            this.Controls.Add(this.ListRdBtn);
+            this.Controls.Add(this.QueueRdBtn);
+            this.Controls.Add(this.StackRdBtn);
             this.Controls.Add(this.OKBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.FileNameTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.treeView1);
-            this.Name = "Dialog";
+            this.Name = "DialogNew";
             this.Text = "Dialog";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,11 +143,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox FileNameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button OKBtn;
+        private System.Windows.Forms.RadioButton StackRdBtn;
+        private System.Windows.Forms.RadioButton QueueRdBtn;
+        private System.Windows.Forms.RadioButton ListRdBtn;
+        private System.Windows.Forms.RadioButton BTreeRdBtn;
 
     }
 }

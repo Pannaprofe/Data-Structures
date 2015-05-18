@@ -8,5 +8,9 @@ namespace Data_Structures
 {
     class MyStack:Structure
     {
+        public override Creator FactoryMethod()
+        {
+            return new CreateStack();
+        }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data_Structures
 {
-    class Structure
+    public abstract class Structure
     {
-
+        abstract public  Creator FactoryMethod();
     }
 }
