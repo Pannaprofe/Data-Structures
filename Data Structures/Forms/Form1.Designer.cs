@@ -43,6 +43,7 @@
             this.Tab1 = new System.Windows.Forms.TabPage();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.DeleteBtn = new System.Windows.Forms.Button();
+            this.CreateBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
@@ -170,11 +171,22 @@
             this.DeleteBtn.UseVisualStyleBackColor = true;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
+            // CreateBtn
+            // 
+            this.CreateBtn.Location = new System.Drawing.Point(358, 21);
+            this.CreateBtn.Name = "CreateBtn";
+            this.CreateBtn.Size = new System.Drawing.Size(75, 23);
+            this.CreateBtn.TabIndex = 10;
+            this.CreateBtn.Text = "Create";
+            this.CreateBtn.UseVisualStyleBackColor = true;
+            this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 336);
+            this.Controls.Add(this.CreateBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.inputTextBox);
@@ -209,6 +221,7 @@
         private System.Windows.Forms.TabPage Tab1;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button CreateBtn;
     }
 }
 
