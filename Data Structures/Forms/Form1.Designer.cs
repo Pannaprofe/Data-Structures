@@ -36,10 +36,7 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCurrentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCurrentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveCurrentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tab1 = new System.Windows.Forms.TabPage();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.DeleteBtn = new System.Windows.Forms.Button();
@@ -99,12 +96,12 @@
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // deleteCurrentToolStripMenuItem
             // 
             this.deleteCurrentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteCurrentToolStripMenuItem1,
-            this.deleteAllToolStripMenuItem});
+            this.deleteCurrentToolStripMenuItem1});
             this.deleteCurrentToolStripMenuItem.Name = "deleteCurrentToolStripMenuItem";
             this.deleteCurrentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteCurrentToolStripMenuItem.Text = "Delete";
@@ -116,32 +113,12 @@
             this.deleteCurrentToolStripMenuItem1.Text = "Delete Current";
             this.deleteCurrentToolStripMenuItem1.Click += new System.EventHandler(this.deleteCurrentToolStripMenuItem1_Click);
             // 
-            // deleteAllToolStripMenuItem
-            // 
-            this.deleteAllToolStripMenuItem.Name = "deleteAllToolStripMenuItem";
-            this.deleteAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteAllToolStripMenuItem.Text = "Delete All";
-            // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveCurrentToolStripMenuItem,
-            this.saveAllToolStripMenuItem});
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // saveCurrentToolStripMenuItem
-            // 
-            this.saveCurrentToolStripMenuItem.Name = "saveCurrentToolStripMenuItem";
-            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.saveCurrentToolStripMenuItem.Text = "Save Current";
-            // 
-            // saveAllToolStripMenuItem
-            // 
-            this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.saveAllToolStripMenuItem.Text = "Save all";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // Tab1
             // 
@@ -215,10 +192,7 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem deleteAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveCurrentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveAllToolStripMenuItem;
         private System.Windows.Forms.TabPage Tab1;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Button DeleteBtn;

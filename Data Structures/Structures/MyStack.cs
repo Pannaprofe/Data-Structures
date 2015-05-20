@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data_Structures
 {
+    [Serializable]
     class MyStack:Structure
     {
         public override Creator FactoryMethod()

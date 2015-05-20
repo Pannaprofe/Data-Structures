@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creators\CreateBinaryTree.cs" />
     <Compile Include="Creators\CreateList.cs" />
     <Compile Include="Creators\CreateQueue.cs" />
     <Compile Include="Creators\CreateStack.cs" />
@@ -61,11 +60,11 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Structures\DllLinker.cs" />
     <Compile Include="Structures\myCollection.cs" />
     <Compile Include="Structures\MyList.cs" />
     <Compile Include="Structures\MyQueue.cs" />
     <Compile Include="Structures\MyStack.cs" />
-    <Compile Include="Structures\MyBinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structures\Structure.cs" />

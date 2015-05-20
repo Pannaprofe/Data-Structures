@@ -72,11 +72,5 @@ namespace Data_Structures
             structure = new MyList();
             TheStructureIsChosen = true;
         }
-
-        private void BTreeRdBtn_CheckedChanged(object sender, EventArgs e)
-        {
-            structure = new MyBinaryTree();
-            TheStructureIsChosen = true;
-        }
     }
 }

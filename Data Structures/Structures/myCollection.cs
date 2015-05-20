@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data_Structures.Forms
 {
+    [Serializable]
     public class myCollection
     {
         public List<int> list;

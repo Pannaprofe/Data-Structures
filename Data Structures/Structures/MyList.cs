@@ -6,18 +6,9 @@ using System.Threading.Tasks;
 
 namespace Data_Structures
 {
+    [Serializable]
     class MyList:Structure
     {
-        public MyList(List<int> input )
-        {
-            
-        }
-
-        public MyList()
-        {
-
-        }
-
         public override Creator FactoryMethod()
         {
             return new CreateList();

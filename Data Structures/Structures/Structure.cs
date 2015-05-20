@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data_Structures
 {
+    [Serializable]
     public abstract class Structure
     {
         abstract public  Creator FactoryMethod();

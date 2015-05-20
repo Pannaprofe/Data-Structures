@@ -35,7 +35,6 @@
             this.StackRdBtn = new System.Windows.Forms.RadioButton();
             this.QueueRdBtn = new System.Windows.Forms.RadioButton();
             this.ListRdBtn = new System.Windows.Forms.RadioButton();
-            this.BTreeRdBtn = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -109,24 +108,11 @@
             this.ListRdBtn.UseVisualStyleBackColor = true;
             this.ListRdBtn.CheckedChanged += new System.EventHandler(this.ListRdBtn_CheckedChanged);
             // 
-            // BTreeRdBtn
-            // 
-            this.BTreeRdBtn.AutoSize = true;
-            this.BTreeRdBtn.Location = new System.Drawing.Point(40, 153);
-            this.BTreeRdBtn.Name = "BTreeRdBtn";
-            this.BTreeRdBtn.Size = new System.Drawing.Size(78, 17);
-            this.BTreeRdBtn.TabIndex = 8;
-            this.BTreeRdBtn.TabStop = true;
-            this.BTreeRdBtn.Text = "Binary tree";
-            this.BTreeRdBtn.UseVisualStyleBackColor = true;
-            this.BTreeRdBtn.CheckedChanged += new System.EventHandler(this.BTreeRdBtn_CheckedChanged);
-            // 
             // DialogNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 200);
-            this.Controls.Add(this.BTreeRdBtn);
             this.Controls.Add(this.ListRdBtn);
             this.Controls.Add(this.QueueRdBtn);
             this.Controls.Add(this.StackRdBtn);
@@ -150,7 +136,6 @@
         private System.Windows.Forms.RadioButton StackRdBtn;
         private System.Windows.Forms.RadioButton QueueRdBtn;
         private System.Windows.Forms.RadioButton ListRdBtn;
-        private System.Windows.Forms.RadioButton BTreeRdBtn;
 
     }
 }
