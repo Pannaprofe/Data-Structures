@@ -37,12 +37,15 @@
             this.deleteCurrentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCurrentToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Tab1 = new System.Windows.Forms.TabPage();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.CreateBtn = new System.Windows.Forms.Button();
+            this.tbl_Btns = new System.Windows.Forms.TableLayoutPanel();
+            this.StackBtn = new System.Windows.Forms.Button();
+            this.QueueBtn = new System.Windows.Forms.Button();
+            this.ListBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.tabControl.SuspendLayout();
+            this.tbl_Btns.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddBtn
@@ -87,14 +90,13 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -103,36 +105,25 @@
             this.deleteCurrentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteCurrentToolStripMenuItem1});
             this.deleteCurrentToolStripMenuItem.Name = "deleteCurrentToolStripMenuItem";
-            this.deleteCurrentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteCurrentToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.deleteCurrentToolStripMenuItem.Text = "Delete";
             // 
             // deleteCurrentToolStripMenuItem1
             // 
             this.deleteCurrentToolStripMenuItem1.Name = "deleteCurrentToolStripMenuItem1";
-            this.deleteCurrentToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteCurrentToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
             this.deleteCurrentToolStripMenuItem1.Text = "Delete Current";
             this.deleteCurrentToolStripMenuItem1.Click += new System.EventHandler(this.deleteCurrentToolStripMenuItem1_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
-            // Tab1
-            // 
-            this.Tab1.Location = new System.Drawing.Point(4, 22);
-            this.Tab1.Name = "Tab1";
-            this.Tab1.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab1.Size = new System.Drawing.Size(581, 229);
-            this.Tab1.TabIndex = 0;
-            this.Tab1.Text = "NewTab";
-            this.Tab1.UseVisualStyleBackColor = true;
-            // 
             // tabControl
             // 
-            this.tabControl.Controls.Add(this.Tab1);
             this.tabControl.Location = new System.Drawing.Point(27, 50);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -159,11 +150,60 @@
             this.CreateBtn.UseVisualStyleBackColor = true;
             this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
             // 
+            // tbl_Btns
+            // 
+            this.tbl_Btns.ColumnCount = 5;
+            this.tbl_Btns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tbl_Btns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tbl_Btns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tbl_Btns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tbl_Btns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tbl_Btns.Controls.Add(this.ListBtn, 2, 0);
+            this.tbl_Btns.Controls.Add(this.QueueBtn, 1, 0);
+            this.tbl_Btns.Controls.Add(this.StackBtn, 0, 0);
+            this.tbl_Btns.Location = new System.Drawing.Point(27, 311);
+            this.tbl_Btns.Name = "tbl_Btns";
+            this.tbl_Btns.RowCount = 1;
+            this.tbl_Btns.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tbl_Btns.Size = new System.Drawing.Size(606, 31);
+            this.tbl_Btns.TabIndex = 11;
+            // 
+            // StackBtn
+            // 
+            this.StackBtn.Location = new System.Drawing.Point(3, 3);
+            this.StackBtn.Name = "StackBtn";
+            this.StackBtn.Size = new System.Drawing.Size(75, 23);
+            this.StackBtn.TabIndex = 0;
+            this.StackBtn.Text = "Stack";
+            this.StackBtn.UseVisualStyleBackColor = true;
+            this.StackBtn.Click += new System.EventHandler(this.StackBtn_Click);
+            // 
+            // QueueBtn
+            // 
+            this.QueueBtn.Location = new System.Drawing.Point(84, 3);
+            this.QueueBtn.Name = "QueueBtn";
+            this.QueueBtn.Size = new System.Drawing.Size(75, 23);
+            this.QueueBtn.TabIndex = 1;
+            this.QueueBtn.Text = "Queue";
+            this.QueueBtn.UseVisualStyleBackColor = true;
+            this.QueueBtn.Click += new System.EventHandler(this.QueueBtn_Click);
+            // 
+            // ListBtn
+            // 
+            this.ListBtn.Location = new System.Drawing.Point(165, 3);
+            this.ListBtn.Name = "ListBtn";
+            this.ListBtn.Size = new System.Drawing.Size(75, 23);
+            this.ListBtn.TabIndex = 2;
+            this.ListBtn.Text = "List";
+            this.ListBtn.UseVisualStyleBackColor = true;
+            this.ListBtn.Click += new System.EventHandler(this.ListBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 336);
+            this.ClientSize = new System.Drawing.Size(662, 369);
+            this.Controls.Add(this.tbl_Btns);
             this.Controls.Add(this.CreateBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.tabControl);
@@ -176,7 +216,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl.ResumeLayout(false);
+            this.tbl_Btns.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,10 +233,13 @@
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.TabPage Tab1;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button CreateBtn;
+        private System.Windows.Forms.TableLayoutPanel tbl_Btns;
+        private System.Windows.Forms.Button ListBtn;
+        private System.Windows.Forms.Button QueueBtn;
+        private System.Windows.Forms.Button StackBtn;
     }
 }
 

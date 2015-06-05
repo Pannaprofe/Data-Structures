@@ -21,10 +21,6 @@ namespace Data_Structures
         {
             InitializeComponent();
             DllLinker.updateDllFiles();
-            foreach (var plugin in DllLinker.dct_DllLinker)
-            {
-                
-            }
            // AddElementsToCurrentTab(Tab1);
             //myCollection collection = new myCollection(new List<int>(), new MyList());
            // StructureInfo.Add(collection);

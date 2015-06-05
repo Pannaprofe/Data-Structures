@@ -1,5 +1,4 @@
-﻿using Data_Structures.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +14,39 @@ namespace Data_Structures.Structures
 {
     public class DllLinker
     {
-        public static void SaveStructureToFile(myCollection x, string path)
+        public static Dictionary<string, Assembly> dct_DllLinker { get; set; }
+
+        public static void updateDllFiles()
+        {
+            dct_DllLinker = new Dictionary<string, Assembly>();
+
+            String fullPath = Application.StartupPath.ToString();
+            var files = Directory.GetFiles(fullPath, "*.dll");
+            foreach (var file in files)
+            {
+                var file2 = file.Substring(0, file.Length - 4);
+                int i = file2.Length - 1;
+                while (!file2[i].Equals('\\')) i--;
+                file2 = file2.Substring(i + 1);
+
+                Assembly a = Assembly.Load(file2);
+                dct_DllLinker.Add(file2, a);
+            }
+        }
+        public static void MakeStructure(string nameOfTheStructure)
+        {
+            
+            // Searching for essential library and creating variable, which features for main class in library 
+            Type typ = dct_DllLinker[nameOfTheStructure].GetType(nameOfTheStructure + "." + nameOfTheStructure);
+            // inst - object of our class
+            var inst = Activator.CreateInstance(typ);
+            // BuildCollection - method of our class
+            var FactoryMethod = typ.GetMethod("FactoryMethod");
+            // Calling our method (from our new object)
+            typ myMegaColl = (typ)FactoryMethod.Invoke(inst, new object[] { });
+            
+        }
+        public static void SaveStructureToFile(CollectionInfo x, string path)
         {
             using (Stream stream = new FileStream(path, FileMode.Create))
             {
@@ -39,7 +70,7 @@ namespace Data_Structures.Structures
             }
         }
 
-        public static myCollection getStructureFromFile(string path)
+        public static CollectionInfo getStructureFromFile(string path)
         {
             using (Stream stream = new FileStream(path, FileMode.Open))
             {
@@ -55,7 +86,7 @@ namespace Data_Structures.Structures
                 //it with the Rijndael class.
                 CryptoStream CryptStream = new CryptoStream(stream, RMCrypto.CreateDecryptor(Key, IV), CryptoStreamMode.Read);
 
-                return bf.Deserialize(CryptStream) as myCollection;
+                return bf.Deserialize(CryptStream) as CollectionInfo;
 
                // CryptStream.Close();
             }

@@ -4,25 +4,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Data_Structures
 {
-    class CreateQueue:Creator
+    class NewQueue
     {
-        public override void BuildCollection(List<int> inputList,TabPage tabPage)
+        public string BuildCollection(Object[] lst)
         {
             Queue queue = new Queue();
-            foreach (var elem in inputList)
+            foreach (var elem in lst)
             {
                 queue.Enqueue(elem);
             }
-            RichTextBox rtb = getRichTextBox(tabPage);
-            rtb.Clear();
+            StringBuilder Sb = new StringBuilder();
             while (queue.Count > 0)
             {
-                rtb.AppendText(queue.Dequeue() + " ");
+                Sb.Append(queue.Dequeue() + " ");
             }
+            return Sb.ToString();
 
         }
     }
